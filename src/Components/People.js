@@ -4,7 +4,6 @@ import Person from './Person';
 
 export default function People() {
   const [people, setPeople] = useState([]);
-  // const [comment, setComment] = useState('');
 
   useEffect(() => {
     const fetchData = async () => {
@@ -14,6 +13,10 @@ export default function People() {
     };
     fetchData();
   }, []);
+
+  // useEffect(() => {
+  //   localStorage.setItem('comment', JSON.stringify(comment));
+  // }, [comment]);
 
   return (
     <>

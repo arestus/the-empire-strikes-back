@@ -3,9 +3,12 @@ import React, { useState } from 'react';
 const Person = ({ person }) => {
   const [inputText, setInputText] = useState('');
   const [comment, setComment] = useState('');
+
   const handleSubmit = e => {
     e.preventDefault();
+
     setComment(inputText);
+
     setInputText('');
   };
 
